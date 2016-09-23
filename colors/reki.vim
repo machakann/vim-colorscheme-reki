@@ -50,7 +50,6 @@ function! s:set() abort
     let darkblue    = {'gui': '#0000cd', 'cterm': '21'}
     let cursorblue  = {'gui': '#69c4ff', 'cterm': '75'}
     let cursorpink  = {'gui': '#f371ab', 'cterm': '171'}
-    let PMgreen     = {'gui': '#a6e2ad', 'cterm': '151'}
 
     "*** highlight groups (:h highlight-groups) ***"
     " fundamental
@@ -90,10 +89,10 @@ function! s:set() abort
     let highlight_group.Title        = [green,       none,        none,      none]
     let highlight_group.WarningMsg   = [yellow,      none,        none,      none]
     " Completion
-    let highlight_group.Pmenu        = [gray2,       PMgreen,     none,      none]
+    let highlight_group.Pmenu        = [gray2,       lightblue,   none,      none]
     let highlight_group.PmenuSel     = [gray1,       lightgreen,  none,      none]
-    let highlight_group.PmenuSbar    = [gray1,       PMgreen,     none,      none]
-    let highlight_group.PmenuThumb   = [gray1,       lightyellow, none,      none]
+    let highlight_group.PmenuSbar    = [gray1,       lightblue,   none,      none]
+    let highlight_group.PmenuThumb   = [gray1,       gray2,       none,      none]
     " Diff
     let highlight_group.DiffAdd      = [none,        lightgreen,  none,      none]
     let highlight_group.DiffChange   = [none,        lightyellow, none,      none]
