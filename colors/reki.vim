@@ -209,7 +209,7 @@ function! s:set() abort
     let highlight_group.Title        = [green,       none,        none,      none]
     let highlight_group.WarningMsg   = [lightyellow, none,        none,      none]
     " Completion
-    let highlight_group.Pmenu        = [gray5,       PMblue,      none,      none]
+    let highlight_group.Pmenu        = [gray6,       PMblue,      none,      none]
     let highlight_group.PmenuSel     = [gray2,       PMlightblue, none,      none]
     let highlight_group.PmenuSbar    = [gray2,       gray5,       none,      none]
     let highlight_group.PmenuThumb   = [gray2,       gray3,       none,      none]
