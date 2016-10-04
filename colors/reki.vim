@@ -187,7 +187,7 @@ function! s:set() abort
     let highlight_group.LineNr       = [gray6,       gray4,   none,      none]
     let highlight_group.CursorLineNr = [yellow,      gray4,   bold,      none]
     let highlight_group.FoldColumn   = [gray5,       gray4,   none,      none]
-    let highlight_group.SignColumn   = [blue,        gray4,   none,      none]
+    let highlight_group.SignColumn   = [green,       gray4,   none,      none]
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
     let highlight_group.ColorColumn  = [none,        darkcyan,    none,      none]
     " Fold
