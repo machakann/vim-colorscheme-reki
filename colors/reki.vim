@@ -42,7 +42,6 @@ function! s:set() abort
     let lightblue   = {'gui': '#c3daed', 'cterm': '153'}
     let lightpurple = {'gui': '#e0d2f8', 'cterm': '189'}
     let lightpink   = {'gui': '#f2cedb', 'cterm': '225'}
-    let lightbrown  = {'gui': '#e6dfda', 'cterm': '231'}
     let paleyellow  = {'gui': '#fffec1', 'cterm': '220'}
     let palegreen   = {'gui': '#aaffaa', 'cterm': '155'}
     let palepink    = {'gui': '#faaecd', 'cterm': '210'}
@@ -67,14 +66,14 @@ function! s:set() abort
     let highlight_group.StatusLineNC = [gray2,       palebrown,   none,      none]
     let highlight_group.WildMenu     = [gray1,       lightyellow, none,      none]
     " Sidebar
-    let highlight_group.LineNr       = [gray2,       lightbrown,  none,      none]
-    let highlight_group.CursorLineNr = [paleyellow,  lightbrown,  bold,      none]
-    let highlight_group.FoldColumn   = [gray2,       lightbrown,  none,      none]
-    let highlight_group.SignColumn   = [pink,        lightbrown,  none,      none]
+    let highlight_group.LineNr       = [gray2,       gray4,       none,      none]
+    let highlight_group.CursorLineNr = [paleyellow,  gray4,       bold,      none]
+    let highlight_group.FoldColumn   = [gray2,       gray4,       none,      none]
+    let highlight_group.SignColumn   = [pink,        gray4,       none,      none]
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
     let highlight_group.ColorColumn  = [none,        lightcyan,   none,      none]
     " Fold
-    let highlight_group.Folded       = [gray2,       gray4,       none,      none]
+    let highlight_group.Folded       = [gray6,       gray3,       none,      none]
     " Tabline
     let highlight_group.TabLineSel   = highlight_group.WildMenu
     let highlight_group.TabLine      = highlight_group.StatusLine
@@ -155,7 +154,6 @@ function! s:set() abort
     let darkcyan    = {'gui': '#4d6b67', 'cterm': '24'}
     let darkblue    = {'gui': '#405260', 'cterm': '19'}
     let darkpurple  = {'gui': '#574c74', 'cterm': '61'}
-    let darkbrown   = {'gui': '#403934', 'cterm': '236'}
     let cursorblue  = {'gui': '#69c4ff', 'cterm': '75'}
     let cursorpink  = {'gui': '#db81aa', 'cterm': '171'}
     let lightyellow = {'gui': '#c0c040', 'cterm': '3'}
@@ -186,14 +184,14 @@ function! s:set() abort
     let highlight_group.StatusLineNC = [gray4,       gray1,       none,      none]
     let highlight_group.WildMenu     = [gray2,       paleyellow,  none,      none]
     " Sidebar
-    let highlight_group.LineNr       = [gray5,       darkbrown,   none,      none]
-    let highlight_group.CursorLineNr = [yellow,      darkbrown,   bold,      none]
-    let highlight_group.FoldColumn   = [gray5,       darkbrown,   none,      none]
-    let highlight_group.SignColumn   = [blue,        darkbrown,   none,      none]
+    let highlight_group.LineNr       = [gray6,       gray4,   none,      none]
+    let highlight_group.CursorLineNr = [yellow,      gray4,   bold,      none]
+    let highlight_group.FoldColumn   = [gray5,       gray4,   none,      none]
+    let highlight_group.SignColumn   = [blue,        gray4,   none,      none]
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
     let highlight_group.ColorColumn  = [none,        darkcyan,    none,      none]
     " Fold
-    let highlight_group.Folded       = [gray5,       darkbrown,   none,      none]
+    let highlight_group.Folded       = [gray1,       gray5,   none,      none]
     " Tabline
     let highlight_group.TabLineSel   = highlight_group.WildMenu
     let highlight_group.TabLine      = highlight_group.StatusLine
