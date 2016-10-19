@@ -147,7 +147,7 @@ function! s:set() abort
     let yellow      = {'gui': '#d5d632', 'cterm': '142'}
     let green       = {'gui': '#88a537', 'cterm': '106'}
     let cyan        = {'gui': '#76aaa4', 'cterm': '73'}
-    let blue        = {'gui': '#4683b2', 'cterm': '32'}
+    let blue        = {'gui': '#5491c0', 'cterm': '32'}
     let purple      = {'gui': '#8b7bb5', 'cterm': '104'}
     let pink        = {'gui': '#b0507c', 'cterm': '133'}
     let brown       = {'gui': '#ad826b', 'cterm': '95'}
