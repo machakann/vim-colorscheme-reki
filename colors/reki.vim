@@ -253,11 +253,16 @@ function! s:set() abort
     let bg_none    = {'gui': gray2.gui, 'cterm': 'NONE'}
   endif
 
-  if exists('g:colorscheme_no_background')
+  if get(g:, 'colorscheme_no_background', 0)
     let highlight_group.Normal[1]      = bg_none
     let highlight_group.TabLineFill[1] = bg_none
     let highlight_group.VertSplit[1]   = bg_none
     let highlight_group.SignColumn[1]  = bg_none
+  endif
+
+  if get(g:, 'colorscheme_no_italic', 0)
+    let italic.gui = 'NONE'
+    let italic.cterm = 'NONE'
   endif
 
   for [group, colors] in items(highlight_group)
