@@ -238,9 +238,9 @@ function! s:set() abort
 
     "*** Settings for plugin ***"
     let highlight_group.MatchParen = [white, purple, none, none]
-    let highlight_group.SwapCurrentItem  = [white, darkcyan,   underline, none]
-    let highlight_group.SwapSelectedItem = [white, darkpurple, underline, none]
-    let highlight_group.SwapItem         = [white, none,       underline, none]
+    let highlight_group.SwapCurrentItem  = [white, green, underline, none]
+    let highlight_group.SwapSelectedItem = [white, cyan,  underline, none]
+    let highlight_group.SwapItem         = [white, none,  underline, none]
     let highlight_group.OperatorSandwichStuff  = [white, palegreen, none,   none]
     let highlight_group.OperatorSandwichDelete = [white, palered,   none,   none]
     let highlight_group.OperatorSandwichAdd    = [white, paleblue,  none,   none]
