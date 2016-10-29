@@ -63,8 +63,8 @@ function! s:set() abort
     let highlight_group.CursorLine   = [none,        gray5,       none,      none]
     let highlight_group.CursorColumn = highlight_group.CursorLine
     " Statusline
-    let highlight_group.StatusLine   = [gray1,       palebrown,   none,      none]
-    let highlight_group.StatusLineNC = [gray2,       palebrown,   none,      none]
+    let highlight_group.StatusLine   = [gray1,       gray5,       none,      none]
+    let highlight_group.StatusLineNC = [gray2,       gray5,       none,      none]
     let highlight_group.WildMenu     = [gray1,       lightyellow, none,      none]
     " Sidebar
     let highlight_group.LineNr       = [gray2,       gray4,       none,      none]
@@ -127,11 +127,11 @@ function! s:set() abort
     let highlight_group.OperatorSandwichStuff  = [none, paleyellow, none,   none]
     let highlight_group.OperatorSandwichDelete = [none, palepink,   none,   none]
     let highlight_group.OperatorSandwichAdd    = [none, palegreen,  none,   none]
-    let highlight_group.uniteStatusHead             = [brown, palebrown, none,   none]
-    let highlight_group.uniteStatusSourceNames      = [blue,  palebrown, none,   none]
-    let highlight_group.uniteStatusSourceCandidates = [green, palebrown, none,   none]
-    let highlight_group.uniteStatusMessage          = [gray2, palebrown, italic, none]
-    let highlight_group.uniteStatusLineNR           = [brown, palebrown, none,   none]
+    let highlight_group.uniteStatusHead             = [brown, gray5, none,   none]
+    let highlight_group.uniteStatusSourceNames      = [blue,  gray5, none,   none]
+    let highlight_group.uniteStatusSourceCandidates = [green, gray5, none,   none]
+    let highlight_group.uniteStatusMessage          = [gray2, gray5, italic, none]
+    let highlight_group.uniteStatusLineNR           = [brown, gray5, none,   none]
 
     let bg_none    = {'gui': gray6.gui, 'cterm': 'NONE'}
   else
