@@ -28,6 +28,7 @@ function! s:set() abort
     let gray4       = {'gui': '#d5d5d5', 'cterm': '252'}
     let gray5       = {'gui': '#e0e0e0', 'cterm': '253'}
     let gray6       = {'gui': '#f1f1f1', 'cterm': '255'}
+    let gray7       = {'gui': '#fdfdfd', 'cterm': '231'}
     let white       = {'gui': '#ffffff', 'cterm': '15'}
     let yellow      = {'gui': '#a79a0d', 'cterm': '142'}
     let green       = {'gui': '#579564', 'cterm': '28'}
@@ -60,7 +61,7 @@ function! s:set() abort
     " Cursor
     let highlight_group.Cursor       = [gray1,       cursorblue,  none,      none]
     let highlight_group.CursorIM     = [white,       cursorpink,  none,      none]
-    let highlight_group.CursorLine   = [none,        gray5,       none,      none]
+    let highlight_group.CursorLine   = [none,        gray7,       none,      none]
     let highlight_group.CursorColumn = highlight_group.CursorLine
     " Statusline
     let highlight_group.StatusLine   = [gray1,       gray5,       none,      none]
