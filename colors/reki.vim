@@ -42,6 +42,7 @@ function! s:set() abort
     let lightblue   = {'gui': '#c3daed', 'cterm': '153'}
     let lightpurple = {'gui': '#e0d2f8', 'cterm': '189'}
     let lightpink   = {'gui': '#f2cedb', 'cterm': '225'}
+    let lightbrown  = {'gui': '#e6dfda', 'cterm': '223'}
     let paleyellow  = {'gui': '#fffec1', 'cterm': '220'}
     let palegreen   = {'gui': '#aaffaa', 'cterm': '155'}
     let palepink    = {'gui': '#faaecd', 'cterm': '210'}
@@ -73,7 +74,7 @@ function! s:set() abort
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
     let highlight_group.ColorColumn  = [none,        lightcyan,   none,      none]
     " Fold
-    let highlight_group.Folded       = [gray6,       gray3,       none,      none]
+    let highlight_group.Folded       = [gray2,       lightbrown,  none,      none]
     " Tabline
     let highlight_group.TabLineSel   = highlight_group.WildMenu
     let highlight_group.TabLine      = highlight_group.StatusLine
