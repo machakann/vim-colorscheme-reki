@@ -25,12 +25,10 @@ function! s:set() abort
     let gray1       = {'gui': '#4a4a4a', 'cterm': '239'}
     let gray2       = {'gui': '#7c7c7c', 'cterm': '242'}
     let gray3       = {'gui': '#aeaeae', 'cterm': '248'}
-    let gray4       = {'gui': '#d5d5d5', 'cterm': '252'}
-    let gray5       = {'gui': '#e0e0e0', 'cterm': '253'}
-    let gray6       = {'gui': '#f1f1f1', 'cterm': '255'}
-    let gray7       = {'gui': '#fdfdfd', 'cterm': '231'}
+    let gray4       = {'gui': '#e0e0e0', 'cterm': '253'}
+    let gray5       = {'gui': '#f1f1f1', 'cterm': '255'}
+    let gray6       = {'gui': '#fdfdfd', 'cterm': '231'}
     let white       = {'gui': '#ffffff', 'cterm': '15'}
-    let yellow      = {'gui': '#a79a0d', 'cterm': '142'}
     let green       = {'gui': '#579564', 'cterm': '28'}
     let cyan        = {'gui': '#56acae', 'cterm': '73'}
     let blue        = {'gui': '#4a7aae', 'cterm': '25'}
@@ -50,28 +48,29 @@ function! s:set() abort
     let palebrown   = {'gui': '#d3cbc5', 'cterm': '188'}
     let darkred     = {'gui': '#cd0000', 'cterm': '124'}
     let darkblue    = {'gui': '#0000cd', 'cterm': '21'}
+    let darkyellow  = {'gui': '#9c8d00', 'cterm': '142'}
     let cursorblue  = {'gui': '#69c4ff', 'cterm': '75'}
     let cursorpink  = {'gui': '#f371ab', 'cterm': '171'}
 
     "*** highlight groups (:h highlight-groups) ***"
     " fundamental
-    let highlight_group.Normal       = [gray1,       gray6,       none,      none]
+    let highlight_group.Normal       = [gray1,       gray5,       none,      none]
     let highlight_group.Visual       = [none,        lightblue,   none,      none]
     let highlight_group.VisualNOS    = [none,        lightcyan,   none,      none]
     " Cursor
     let highlight_group.Cursor       = [gray1,       cursorblue,  none,      none]
     let highlight_group.CursorIM     = [white,       cursorpink,  none,      none]
-    let highlight_group.CursorLine   = [none,        gray7,       none,      none]
+    let highlight_group.CursorLine   = [none,        gray6,       none,      none]
     let highlight_group.CursorColumn = highlight_group.CursorLine
     " Statusline
-    let highlight_group.StatusLine   = [gray1,       gray5,       none,      none]
-    let highlight_group.StatusLineNC = [gray2,       gray5,       none,      none]
+    let highlight_group.StatusLine   = [gray1,       gray4,       none,      none]
+    let highlight_group.StatusLineNC = [gray2,       gray4,       none,      none]
     let highlight_group.WildMenu     = [gray1,       lightyellow, none,      none]
     " Sidebar
-    let highlight_group.LineNr       = [gray2,       gray4,       none,      none]
-    let highlight_group.CursorLineNr = [paleyellow,  gray4,       bold,      none]
-    let highlight_group.FoldColumn   = [gray2,       gray4,       none,      none]
-    let highlight_group.SignColumn   = [pink,        gray4,       none,      none]
+    let highlight_group.LineNr       = [gray3,       lightbrown,  none,      none]
+    let highlight_group.CursorLineNr = [darkyellow,  lightbrown,  none,      none]
+    let highlight_group.FoldColumn   = [gray2,       lightbrown,  none,      none]
+    let highlight_group.SignColumn   = [pink,        lightbrown,  none,      none]
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
     let highlight_group.ColorColumn  = [none,        lightcyan,   none,      none]
     " Fold
@@ -89,7 +88,7 @@ function! s:set() abort
     let highlight_group.MoreMsg      = [green,       none,        bold,      none]
     let highlight_group.Question     = [purple,      none,        bold,      none]
     let highlight_group.Title        = [green,       none,        none,      none]
-    let highlight_group.WarningMsg   = [yellow,      none,        none,      none]
+    let highlight_group.WarningMsg   = [darkyellow,  none,        none,      none]
     " Completion
     let highlight_group.Pmenu        = [gray2,       lightblue,   none,      none]
     let highlight_group.PmenuSel     = [gray1,       lightgreen,  none,      none]
@@ -118,7 +117,7 @@ function! s:set() abort
     let highlight_group.Underlined   = [darkblue,    none,        underline, none]
     let highlight_group.Ignore       = [gray3,       none,        none,      none]
     let highlight_group.Error        = [darkred,     none,        undercurl, darkred]
-    let highlight_group.Todo         = [darkred,     gray4,       none,      none]
+    let highlight_group.Todo         = [darkred,     lightbrown,  none,      none]
 
     "*** Settings for plugin ***"
     let highlight_group.MatchParen = [none, paleyellow, none, none]
@@ -128,13 +127,13 @@ function! s:set() abort
     let highlight_group.OperatorSandwichStuff  = [none, paleyellow, none,   none]
     let highlight_group.OperatorSandwichDelete = [none, palepink,   none,   none]
     let highlight_group.OperatorSandwichAdd    = [none, palegreen,  none,   none]
-    let highlight_group.uniteStatusHead             = [brown, gray5, none,   none]
-    let highlight_group.uniteStatusSourceNames      = [blue,  gray5, none,   none]
-    let highlight_group.uniteStatusSourceCandidates = [green, gray5, none,   none]
-    let highlight_group.uniteStatusMessage          = [gray2, gray5, italic, none]
-    let highlight_group.uniteStatusLineNR           = [brown, gray5, none,   none]
+    let highlight_group.uniteStatusHead             = [brown, gray4, none,   none]
+    let highlight_group.uniteStatusSourceNames      = [blue,  gray4, none,   none]
+    let highlight_group.uniteStatusSourceCandidates = [green, gray4, none,   none]
+    let highlight_group.uniteStatusMessage          = [gray2, gray4, italic, none]
+    let highlight_group.uniteStatusLineNR           = [brown, gray4, none,   none]
 
-    let bg_none    = {'gui': gray6.gui, 'cterm': 'NONE'}
+    let bg_none    = {'gui': gray5.gui, 'cterm': 'NONE'}
   else
     " dark theme
 
