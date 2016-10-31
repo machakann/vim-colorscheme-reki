@@ -44,7 +44,7 @@ function! s:set() abort
     let lightpurple = {'gui': '#e0d2f8', 'cterm': '189'}
     let lightpink   = {'gui': '#f2cedb', 'cterm': '225'}
     let lightbrown  = {'gui': '#e6dfda', 'cterm': '223'}
-    let paleyellow  = {'gui': '#fffec1', 'cterm': '220'}
+    let paleyellow  = {'gui': '#fffc89', 'cterm': '220'}
     let palegreen   = {'gui': '#aaffaa', 'cterm': '155'}
     let palepink    = {'gui': '#faaecd', 'cterm': '210'}
     let palebrown   = {'gui': '#d3cbc5', 'cterm': '188'}
