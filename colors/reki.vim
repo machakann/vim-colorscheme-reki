@@ -44,6 +44,7 @@ function! s:set() abort
     let lightbrown  = {'gui': '#e6dfda', 'cterm': '254'}
     let paleyellow  = {'gui': '#fffc89', 'cterm': '226'}
     let palegreen   = {'gui': '#aaffaa', 'cterm': '155'}
+    let palecyan    = {'gui': '#9accce', 'cterm': '152'}
     let palepink    = {'gui': '#faaecd', 'cterm': '210'}
     let palebrown   = {'gui': '#d3cbc5', 'cterm': '188'}
     let darkred     = {'gui': '#cd0000', 'cterm': '124'}
@@ -102,7 +103,7 @@ function! s:set() abort
     " Miscellaneous
     let highlight_group.Directory    = [blue,        none,        none,      none]
     let highlight_group.NonText      = [palebrown,   none,        none,      none]
-    let highlight_group.SpecialKey   = [cyan,        none,        none,      none]
+    let highlight_group.SpecialKey   = [palecyan,    none,        none,      none]
     let highlight_group.Conceal      = [gray3,       lightcyan,   none,      none]
 
     "*** Syntax groups (:h group-name) ***"
@@ -220,7 +221,7 @@ function! s:set() abort
     " Miscellaneous
     let highlight_group.Directory    = [blue,        none,        none,      none]
     let highlight_group.NonText      = [gray4,       none,        none,      none]
-    let highlight_group.SpecialKey   = [cyan,        none,        none,      none]
+    let highlight_group.SpecialKey   = [darkcyan,    none,        none,      none]
     let highlight_group.Conceal      = [gray4,       none,        none,      none]
 
     "*** Syntax groups (:h group-name) ***"
