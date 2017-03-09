@@ -186,14 +186,14 @@ function! s:set() abort
     let highlight_group.StatusLineNC = [gray4,       gray1,       none,      none]
     let highlight_group.WildMenu     = [gray2,       paleyellow,  none,      none]
     " Sidebar
-    let highlight_group.LineNr       = [gray6,       gray4,   none,      none]
-    let highlight_group.CursorLineNr = [yellow,      gray4,   bold,      none]
-    let highlight_group.FoldColumn   = [gray5,       gray4,   none,      none]
-    let highlight_group.SignColumn   = [green,       gray4,   none,      none]
+    let highlight_group.LineNr       = [gray6,       gray4,       none,      none]
+    let highlight_group.CursorLineNr = [yellow,      gray4,       bold,      none]
+    let highlight_group.FoldColumn   = [gray5,       gray4,       none,      none]
+    let highlight_group.SignColumn   = [green,       gray4,       none,      none]
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
     let highlight_group.ColorColumn  = [none,        darkcyan,    none,      none]
     " Fold
-    let highlight_group.Folded       = [gray1,       gray5,   none,      none]
+    let highlight_group.Folded       = [gray1,       gray5,       none,      none]
     " Tabline
     let highlight_group.TabLineSel   = highlight_group.WildMenu
     let highlight_group.TabLine      = highlight_group.StatusLine
