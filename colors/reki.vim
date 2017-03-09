@@ -122,6 +122,7 @@ function! s:set() abort
 
     "*** Settings for plugin ***"
     let highlight_group.MatchParen = [none, paleyellow, none, none]
+    let highlight_group.HighlightedyankRegion = highlight_group.IncSearch
     let highlight_group.SwapCurrentItem  = [darkblue, lightyellow, underline, none]
     let highlight_group.SwapSelectedItem = [darkblue, lightpink,   underline, none]
     let highlight_group.SwapItem         = [darkblue, none,        underline, none]
@@ -243,6 +244,7 @@ function! s:set() abort
     let highlight_group.SwapCurrentItem  = [white, green, underline, none]
     let highlight_group.SwapSelectedItem = [white, cyan,  underline, none]
     let highlight_group.SwapItem         = [white, none,  underline, none]
+    let highlight_group.HighlightedyankRegion = [none, gray4, none, none]
     let highlight_group.OperatorSandwichStuff  = [white, palegreen, none,   none]
     let highlight_group.OperatorSandwichDelete = [white, palered,   none,   none]
     let highlight_group.OperatorSandwichAdd    = [white, paleblue,  none,   none]
