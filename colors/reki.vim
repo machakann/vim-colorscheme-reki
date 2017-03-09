@@ -201,7 +201,7 @@ function! s:set() abort
     let highlight_group.TabLineFill  = highlight_group.StatusLine
     " Search
     let highlight_group.Search       = [white,       darkpurple,  none,      none]
-    let highlight_group.IncSearch    = [white,       darkcyan,    none,      none]
+    let highlight_group.IncSearch    = [none,        gray4,       none,      none]
     " Message
     let highlight_group.ErrorMsg     = [lightred,    none,        none,      none]
     let highlight_group.ModeMsg      = [brown,       none,        bold,      none]
