@@ -16,6 +16,7 @@ function! s:set() abort
   let italic         = {'gui': 'italic',    'cterm': 'italic'}
   let underline      = {'gui': 'underline', 'cterm': 'underline'}
   let undercurl      = {'gui': 'undercurl', 'cterm': 'underline'}
+  let boldunderline  = {'gui': 'bold,underline', 'cterm': 'bold,underline'}
 
   let highlight_group = {}
   if &background ==# 'light'
@@ -118,7 +119,7 @@ function! s:set() abort
     let highlight_group.Todo         = [darkyellow,  none,        none,      none]
 
     "*** Settings for plugin ***"
-    let highlight_group.MatchParen = [none, paleyellow, none, none]
+    let highlight_group.MatchParen = [none, none, boldunderline, none]
     let highlight_group.HighlightedyankRegion = highlight_group.IncSearch
     let highlight_group.SwapCurrentItem  = [darkblue, lightyellow, underline, none]
     let highlight_group.SwapSelectedItem = [darkblue, lightpink,   underline, none]
@@ -236,7 +237,7 @@ function! s:set() abort
     let highlight_group.Todo         = [lightyellow, none,        underline, none]
 
     "*** Settings for plugin ***"
-    let highlight_group.MatchParen = [white, purple, none, none]
+    let highlight_group.MatchParen = [none, none, boldunderline, none]
     let highlight_group.SwapCurrentItem  = [white, green, underline, none]
     let highlight_group.SwapSelectedItem = [white, cyan,  underline, none]
     let highlight_group.SwapItem         = [white, none,  underline, none]
