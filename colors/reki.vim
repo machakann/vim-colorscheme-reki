@@ -185,7 +185,7 @@ function! s:set() abort
     let highlight_group.WildMenu     = [gray2,       paleyellow,  none,      none]
     " Sidebar
     let highlight_group.LineNr       = [gray5,       gray3,       none,      none]
-    let highlight_group.CursorLineNr = [cyan,        gray4,       none,      none]
+    let highlight_group.CursorLineNr = [paleyellow,  gray4,       none,      none]
     let highlight_group.FoldColumn   = [gray5,       gray3,       none,      none]
     let highlight_group.SignColumn   = [green,       gray3,       none,      none]
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
