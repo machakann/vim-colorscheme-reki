@@ -66,6 +66,8 @@ function! s:set() abort
     let highlight_group.StatusLine   = [gray1,       lightbrown,  none,      none]
     let highlight_group.StatusLineNC = [gray2,       lightbrown,  none,      none]
     let highlight_group.WildMenu     = [gray1,       yellow,      none,      none]
+    let highlight_group.StatusLineTerm = highlight_group.StatusLine
+    let highlight_group.StatusLineTermNC = highlight_group.StatusLineNC
     " Sidebar
     let highlight_group.LineNr       = [gray3,       gray4,       none,      none]
     let highlight_group.CursorLineNr = [paleyellow,  gray4,       none,      none]
@@ -183,6 +185,8 @@ function! s:set() abort
     let highlight_group.StatusLine   = [gray6,       gray1,       none,      none]
     let highlight_group.StatusLineNC = [gray4,       gray1,       none,      none]
     let highlight_group.WildMenu     = [gray2,       paleyellow,  none,      none]
+    let highlight_group.StatusLineTerm = highlight_group.StatusLine
+    let highlight_group.StatusLineTermNC = highlight_group.StatusLineNC
     " Sidebar
     let highlight_group.LineNr       = [gray5,       gray3,       none,      none]
     let highlight_group.CursorLineNr = [paleyellow,  gray4,       none,      none]
