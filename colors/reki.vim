@@ -25,8 +25,8 @@ function! s:set() abort
     " Palette
     let gray1       = {'gui': '#4a4a4a', 'cterm': '238'}
     let gray2       = {'gui': '#7c7c7c', 'cterm': '242'}
-    let gray3       = {'gui': '#c5c5c5', 'cterm': '250'}
-    let gray4       = {'gui': '#e0e0e0', 'cterm': '253'}
+    let gray3       = {'gui': '#b9b9b9', 'cterm': '250'}
+    let gray4       = {'gui': '#e3e3e3', 'cterm': '254'}
     let gray5       = {'gui': '#f1f1f1', 'cterm': '255'}
     let gray6       = {'gui': '#fdfdfd', 'cterm': '231'}
     let white       = {'gui': '#ffffff', 'cterm': '15'}
@@ -36,14 +36,14 @@ function! s:set() abort
     let purple      = {'gui': '#9178bc', 'cterm': '98'}
     let pink        = {'gui': '#c46c96', 'cterm': '169'}
     let brown       = {'gui': '#9e7052', 'cterm': '95'}
-    let lightyellow = {'gui': '#f4e7c0', 'cterm': '229'}
+    let yellow      = {'gui': '#f4e7c0', 'cterm': '229'}
     let lightgreen  = {'gui': '#c5f3c5', 'cterm': '193'}
     let lightcyan   = {'gui': '#cfe1e1', 'cterm': '195'}
     let lightblue   = {'gui': '#d3e1ed', 'cterm': '153'}
     let lightpurple = {'gui': '#e0d2f8', 'cterm': '189'}
     let lightpink   = {'gui': '#f2cedb', 'cterm': '225'}
     let lightbrown  = {'gui': '#d9cfc7', 'cterm': '254'}
-    let paleyellow  = {'gui': '#fffc89', 'cterm': '226'}
+    let paleyellow  = {'gui': '#ffffae', 'cterm': '226'}
     let palecyan    = {'gui': '#9accce', 'cterm': '152'}
     let palebrown   = {'gui': '#d3cbc5', 'cterm': '188'}
     let darkred     = {'gui': '#cd0000', 'cterm': '124'}
@@ -65,11 +65,11 @@ function! s:set() abort
     " Statusline
     let highlight_group.StatusLine   = [gray1,       lightbrown,  none,      none]
     let highlight_group.StatusLineNC = [gray2,       lightbrown,  none,      none]
-    let highlight_group.WildMenu     = [gray1,       lightyellow, none,      none]
+    let highlight_group.WildMenu     = [gray1,       yellow,      none,      none]
     " Sidebar
-    let highlight_group.LineNr       = [gray2,       gray4,       none,      none]
-    let highlight_group.CursorLineNr = [paleyellow,  gray3,       none,      none]
-    let highlight_group.FoldColumn   = [gray2,       gray4,       none,      none]
+    let highlight_group.LineNr       = [gray3,       gray4,       none,      none]
+    let highlight_group.CursorLineNr = [paleyellow,  gray4,       none,      none]
+    let highlight_group.FoldColumn   = [gray3,       gray4,       none,      none]
     let highlight_group.SignColumn   = [pink,        gray4,       none,      none]
     let highlight_group.VertSplit    = highlight_group.StatusLineNC
     let highlight_group.ColorColumn  = [none,        lightcyan,   none,      none]
@@ -81,13 +81,13 @@ function! s:set() abort
     let highlight_group.TabLineFill  = highlight_group.StatusLine
     " Search
     let highlight_group.Search       = [none,        lightpurple, none,      none]
-    let highlight_group.IncSearch    = [none,        lightyellow, none,      none]
+    let highlight_group.IncSearch    = [none,        yellow,      none,      none]
     " Message
     let highlight_group.ErrorMsg     = [darkred,     none,        none,      none]
     let highlight_group.ModeMsg      = [brown,       none,        bold,      none]
-    let highlight_group.MoreMsg      = [green,       none,        bold,      none]
+    let highlight_group.MoreMsg      = [brown,       none,        bold,      none]
     let highlight_group.Question     = [purple,      none,        bold,      none]
-    let highlight_group.Title        = [green,       none,        none,      none]
+    let highlight_group.Title        = [brown,       none,        none,      none]
     let highlight_group.WarningMsg   = [darkyellow,  none,        none,      none]
     " Completion
     let highlight_group.Pmenu        = [gray2,       lightblue,   none,      none]
@@ -96,9 +96,9 @@ function! s:set() abort
     let highlight_group.PmenuThumb   = [gray1,       gray2,       none,      none]
     " Diff
     let highlight_group.DiffAdd      = [none,        lightgreen,  none,      none]
-    let highlight_group.DiffChange   = [none,        lightyellow, none,      none]
+    let highlight_group.DiffChange   = [none,        yellow,      none,      none]
     let highlight_group.DiffDelete   = [none,        lightpink,   none,      none]
-    let highlight_group.DiffText     = [none,        lightyellow, underline, none]
+    let highlight_group.DiffText     = [none,        yellow,      underline, none]
     " Miscellaneous
     let highlight_group.Directory    = [blue,        none,        none,      none]
     let highlight_group.NonText      = [palebrown,   none,        none,      none]
@@ -114,17 +114,17 @@ function! s:set() abort
     let highlight_group.Type         = [pink,        none,        none,      none]
     let highlight_group.Special      = [purple,      none,        none,      none]
     let highlight_group.Underlined   = [darkblue,    none,        underline, none]
-    let highlight_group.Ignore       = [gray4,       none,        none,      none]
+    let highlight_group.Ignore       = [palebrown,   none,        none,      none]
     let highlight_group.Error        = [darkred,     none,        undercurl, darkred]
     let highlight_group.Todo         = [darkyellow,  none,        none,      none]
 
     "*** Settings for plugin ***"
-    let highlight_group.MatchParen = [none, none, boldunderline, none]
+    let highlight_group.MatchParen = [none, yellow, boldunderline, none]
     let highlight_group.HighlightedyankRegion = highlight_group.IncSearch
-    let highlight_group.SwapCurrentItem  = [darkblue, lightyellow, underline, none]
+    let highlight_group.SwapCurrentItem  = [darkblue, yellow, underline, none]
     let highlight_group.SwapSelectedItem = [darkblue, lightpink,   underline, none]
     let highlight_group.SwapItem         = [darkblue, none,        underline, none]
-    let highlight_group.OperatorSandwichChange = [none, lightyellow, none,   none]
+    let highlight_group.OperatorSandwichChange = [none, yellow, none,   none]
     let highlight_group.OperatorSandwichDelete = [none, lightpink,   none,   none]
     let highlight_group.OperatorSandwichAdd    = [none, lightgreen,  none,   none]
     let highlight_group.uniteStatusHead             = [brown, lightbrown, none,   none]
@@ -145,7 +145,6 @@ function! s:set() abort
     let gray5       = {'gui': '#898989', 'cterm': '245'}
     let gray6       = {'gui': '#c1c1b3', 'cterm': '249'}
     let white       = {'gui': '#ffffff', 'cterm': '15'}
-    let yellow      = {'gui': '#d5d632', 'cterm': '142'}
     let green       = {'gui': '#88a537', 'cterm': '106'}
     let cyan        = {'gui': '#76aaa4', 'cterm': '73'}
     let blue        = {'gui': '#5491c0', 'cterm': '32'}
@@ -237,7 +236,7 @@ function! s:set() abort
     let highlight_group.Todo         = [lightyellow, none,        underline, none]
 
     "*** Settings for plugin ***"
-    let highlight_group.MatchParen = [none, none, boldunderline, none]
+    let highlight_group.MatchParen = [none, gray4, boldunderline, none]
     let highlight_group.SwapCurrentItem  = [white, green, underline, none]
     let highlight_group.SwapSelectedItem = [white, cyan,  underline, none]
     let highlight_group.SwapItem         = [white, none,  underline, none]
