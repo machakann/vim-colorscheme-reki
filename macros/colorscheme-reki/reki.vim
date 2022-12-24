@@ -323,7 +323,11 @@ function! s:set(colorscheme, terminal_ansi_colors) abort
 endfunction
 
 
-let [s:colorscheme, s:terminal_ansi_colors] = s:dark()
+if &background is# 'light'
+  let [s:colorscheme, s:terminal_ansi_colors] = s:light()
+else
+  let [s:colorscheme, s:terminal_ansi_colors] = s:dark()
+endif
 call s:set(s:colorscheme, s:terminal_ansi_colors)
 
 
