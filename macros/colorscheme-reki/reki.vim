@@ -309,9 +309,9 @@ function! s:set(colorscheme, terminal_ansi_colors) abort
   endif
   let g:colors_name = 'reki'
 
-  set background=dark
   for [group, colors] in items(a:colorscheme)
     let cmd = s:hi_command(group, colors)
+    execute cmd
   endfor
 
   let g:terminal_ansi_colors = a:terminal_ansi_colors
